@@ -1,5 +1,7 @@
 package se.salt.jfs.kata.pokemon.dtos;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import java.util.List;
 
 public record PokemonResponse(
@@ -7,6 +9,7 @@ public record PokemonResponse(
         String name,
         int height,
         int weight,
+        @JsonProperty("types")
         List<String> types
 ) {}
 

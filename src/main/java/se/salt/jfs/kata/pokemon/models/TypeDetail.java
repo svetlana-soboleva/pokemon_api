@@ -6,17 +6,17 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 public class TypeDetail {
 
     @JsonProperty("name")
-    private String name;
+    private String detail;
 
     @JsonProperty("url")
     private String url;
 
-    public String getName() {
-        return name;
+    public String getDetail() {
+        return detail;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setDetail(String detail) {
+        this.detail = detail;
     }
 
     public String getUrl() {
@@ -29,6 +29,6 @@ public class TypeDetail {
 
     @Override
     public String toString() {
-        return name;
+        return detail;
     }
 }
